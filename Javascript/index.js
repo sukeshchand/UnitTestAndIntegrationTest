@@ -30,7 +30,9 @@ RunTest = () => {
     
     validateAgePassTest();
 
-    validateAgeFailTest();
+    validateAgeFailWhenLessThan18Test()
+
+    validateAgeFailWhenMoreThan100Test();
 
     createCustomerPassTest();
 

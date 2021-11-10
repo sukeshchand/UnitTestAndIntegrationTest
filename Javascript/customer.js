@@ -22,6 +22,9 @@ validateAge = (age) => {
     if(age < 18) {
         throw new Error("Age should be greater than 18");
     }
+    if(age>100){
+        throw new Error("Age should be less than 100");
+    }
 }
 
 getCustomerByName = (customers, name) => {

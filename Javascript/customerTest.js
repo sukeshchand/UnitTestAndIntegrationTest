@@ -51,7 +51,7 @@ validateAgePassTest = () => {
     }
 }
     
-validateAgeFailTest = () => {
+validateAgeFailWhenLessThan18Test = () => {
     try {
         // Arrange
         let age = "17";
@@ -63,6 +63,21 @@ validateAgeFailTest = () => {
         console.log("validateAgeFailedTest failed");
     } catch (error) {
         console.log("validateAgeFailedTest passed");
+    }
+}
+
+validateAgeFailWhenMoreThan100Test = () => {
+    try {
+        // Arrange
+        let age = "101";
+
+        // Act
+        validateAge(age);
+
+        // Assert
+        console.log("validateAgeFailWhenMoreThan100Test failed");
+    } catch (error) {
+        console.log("validateAgeFailWhenMoreThan100Test passed");
     }
 }
 
